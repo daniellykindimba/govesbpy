@@ -199,6 +199,7 @@ class GovESB:
         r_data = response_data.get("data")
         r_signature = response_data.get("signature")
         is_verified = self.verify_signature(r_data, r_signature)
+        print("NECTA Retrieved Data:", r_data)
         print("NECTA Signature Verified:", is_verified)
 
 
